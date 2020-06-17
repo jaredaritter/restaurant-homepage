@@ -1,6 +1,6 @@
 function  navlinks() {
     
-    const links = ['Homepage', 'Menu', 'Contacts'];
+    const links = ['Homepage', 'Menu', 'Contact'];
     const nav = document.querySelector('#nav');
     
     function addComponent(title) {
