@@ -1,0 +1,19 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#nav {
+    display: flex;
+}
+
+.nav-link {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.active {
+    background-color: gray;
+}
