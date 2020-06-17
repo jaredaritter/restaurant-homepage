@@ -1,1 +1,5 @@
-console.log('Hello world');
+import homepage from './homepage.js';
+import navlinks from './navlinks.js';
+
+navlinks();
+homepage();
