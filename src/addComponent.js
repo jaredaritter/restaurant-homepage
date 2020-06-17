@@ -1,7 +1,7 @@
-// CREATES AND APPENDS ELEMENTS TO THE CONTENT DIV. PARSES BASED ON PROP NAME
-function addComponent(prop, pageInfo, content) {
+// CREATES AND APPENDS NEW ELEMENT TO THE PARENT ELEMENT. PARSES BASED ON PROP NAME
+function addComponent(prop, object, parent) {
     const element = document.createElement(prop);
-    const value = pageInfo[prop];
+    const value = object[prop];
     if (prop === 'h1') {
         element.textContent = value;
     } else if (prop === 'img'){
@@ -10,13 +10,13 @@ function addComponent(prop, pageInfo, content) {
         for (let i = 0; i < value.length - 1; i++) {
             const extra = document.createElement(prop);
             extra.textContent = value[i];
-            content.appendChild(extra);
+            parent.appendChild(extra);
         }
         element.textContent = value[value.length - 1];
     } else {
-        console.error('ERROR');
+        console.error('UNKNOWN PROP TYPE');
     }
-    content.appendChild(element);
+    parent.appendChild(element);
 }
 
 export default addComponent
