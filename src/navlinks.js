@@ -6,6 +6,7 @@ function  navlinks() {
     function addComponent(title) {
         const element = document.createElement('div');
         element.textContent = title;
+        element.classList.add('nav-link');
         nav.appendChild(element);
     }
 
