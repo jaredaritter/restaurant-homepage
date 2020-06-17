@@ -15,5 +15,9 @@ html, body {
 }
 
 .active {
-    background-color: gray;
+    background-color: blanchedalmond;
+}
+
+#content {
+    background-color: blanchedalmond;
 }

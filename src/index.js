@@ -12,10 +12,15 @@ function pageLogic() {
     
     nav.forEach(ele => {
         ele.addEventListener('click', displayContent);
+        // OTHER EASY WAY TO INITIALIZE?
+        if (ele.textContent === 'Homepage') {
+            ele.classList.add('active');
+        }
     })
     
     function displayContent(e) {
         clearContent();
+        setActiveTab(e);
         const name = e.target.textContent;
         if (name === 'Homepage') {
             homepage();
@@ -31,5 +36,12 @@ function pageLogic() {
         while (content.firstChild) {
             content.removeChild(content.lastChild);
         };
+    }
+
+    function setActiveTab(e) {
+        nav.forEach(ele => {
+            ele.classList.remove('active');
+        })
+        e.target.classList.add('active');
     }
 };
