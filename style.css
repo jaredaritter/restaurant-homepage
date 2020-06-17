@@ -3,21 +3,34 @@ html, body {
     margin: 0;
 }
 
+body {
+    background-color: blanchedalmond;
+}
+
 #nav {
     display: flex;
 }
 
 .nav-link {
     width: 100px;
-    height: 50px;
+    height: 40px;
     text-align: center;
     font-size: 1.4em;
+    line-height: 2.0em;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .active {
-    background-color: blanchedalmond;
+    background-color: burlywood;
+    border-width: 2px;
+
 }
 
 #content {
-    background-color: blanchedalmond;
+    background-color: burlywood;
+    padding: 10px 10px 30px 10px;
 }
