@@ -11,24 +11,17 @@ function pageLogic() {
     const nav = document.querySelectorAll('.nav-link');
     
     nav.forEach(ele => {
-        ele.addEventListener('click', displayContent);
-        // OTHER EASY WAY TO INITIALIZE?
+        ele.addEventListener('click', displayNewContent);
+        // IS THERE AN EASIER WAY TO SET STARTING TAB TO BE HIGHLIGHTED?
         if (ele.textContent === 'Homepage') {
             ele.classList.add('active');
         }
     })
     
-    function displayContent(e) {
+    function displayNewContent(e) {
         clearContent();
         setActiveTab(e);
-        const name = e.target.textContent;
-        if (name === 'Homepage') {
-            homepage();
-        } else if (name === 'Menu') {
-            menu();
-        } else if (name === 'Contact') {
-            contact();
-        }
+        renderChoice(e);
     }
 
     function clearContent() {
@@ -43,5 +36,16 @@ function pageLogic() {
             ele.classList.remove('active');
         })
         e.target.classList.add('active');
+    }
+
+    function renderChoice(e) {
+        const name = e.target.textContent;
+        if (name === 'Homepage') {
+            homepage();
+        } else if (name === 'Menu') {
+            menu();
+        } else if (name === 'Contact') {
+            contact();
+        }
     }
 };
