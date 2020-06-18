@@ -1,4 +1,4 @@
-function  navlinks() {
+function navlinks() {
     
     const links = ['Homepage', 'Menu', 'Contact'];
     const nav = document.querySelector('#nav');
