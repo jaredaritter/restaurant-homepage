@@ -1,14 +1,18 @@
 # Restaurant Homepage
 * Homepage, Menu, and Contact pages
-* Most content currently boilerplate
+* Content currently boilerplate
 
 ## Project Details
-* Focused use of modules and javascript to implement page changes instead of links
+* Focus: Use of modules and javascript to implement page changes instead of links
+* Practical example in seperation of concerns and single responsibility through modules
+* [NPM](https://www.npmjs.com/) and [Webpack](https://webpack.js.org/) used to simplify workflow and learn basic dev tools
 
 ## To Do and Thoughts
 * Flesh out:
     * Styling
     * Menu options with images
     * contact page
-* Currently making poor/limited use of returns and could use more information on proper module construction/technique 
-    * Take a look at my modules and other student's projects for ideas on how to improve use of public functions and returns
+
+## Future Learning:
+    * Currently bias towards using functions for secondary effects with limited direct use of returns. Could use more information on proper module construction/technique 
+    * Take a look at my modules and other student's projects for ideas on how to improve organization, use of public functions, and function returns after working a few sections ahead
