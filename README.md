@@ -13,6 +13,6 @@
     * Menu options with images
     * contact page
 
-## Future Learning:
+## Future Learning
     * Currently bias towards using functions for secondary effects with limited direct use of returns. Could use more information on proper module construction/technique 
     * Take a look at my modules and other student's projects for ideas on how to improve organization, use of public functions, and function returns after working a few sections ahead
