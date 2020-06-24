@@ -4,4 +4,4 @@ const makeParagraph = function (value) {
   return para;
 };
 
-export default makeParagraph;
+export { makeParagraph };
