@@ -28,7 +28,7 @@ function pageLogic() {
         const content = document.querySelector('#content');
         while (content.firstChild) {
             content.removeChild(content.lastChild);
-        };
+        }
     }
 
     function setActiveTab(e) {
@@ -48,4 +48,4 @@ function pageLogic() {
             contact();
         }
     }
-};
+}
