@@ -1,6 +1,6 @@
 # Restaurant Homepage
 
-- Homepage, Menu, and Contact pages
+- TOP project to build a restaurant homepage. Project contains Homepage, Menu, and Contact pages for a latin food restaurant.
 
 ## Project Details
 
