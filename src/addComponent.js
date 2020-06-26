@@ -6,7 +6,7 @@ function addComponent(prop, object, parent) {
     element.textContent = value;
   } else if (prop === 'img') {
     element.src = value[0];
-    console.log(element.src);
+    element.classList.add(value[1]);
   } else if (prop === 'p') {
     for (let i = 0; i < value.length - 1; i++) {
       const extra = document.createElement(prop);
