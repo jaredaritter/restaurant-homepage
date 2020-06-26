@@ -2,7 +2,7 @@
 
 import { makeHeader } from './makeHeader.js';
 import { makeParagraph } from './makeParagraph.js';
-import { makeElement } from './makeElement.js';
+// import { makeElement } from './makeElement.js';
 
 function contact() {
   const pageInfo = {
@@ -26,28 +26,28 @@ function contact() {
   }
 
   // PUSHED TO ARRAY BY LOGIC THEN APPENDED AS GROUP AFTER
-  const arr = [];
-  for (const prop in pageInfo) {
-    const value = pageInfo[prop];
-    if (prop === 'h1') {
-      arr.push(makeHeader(value));
-    } else {
-      arr.push(makeParagraph(value));
-    }
-  }
-  arr.forEach((item) => content.appendChild(item));
+  // const arr = [];
+  // for (const prop in pageInfo) {
+  //   const value = pageInfo[prop];
+  //   if (prop === 'h1') {
+  //     arr.push(makeHeader(value));
+  //   } else {
+  //     arr.push(makeParagraph(value));
+  //   }
+  // }
+  // arr.forEach((item) => content.appendChild(item));
 
   // UNIFIED MAKER MODULES UNDER PARENT MODULE. PUSHED TO ARRAY BY LOGIC THEN APPENDED AS GROUP AFTERWARDS
-  const arr2 = [];
-  for (const prop in pageInfo) {
-    const value = pageInfo[prop];
-    if (prop === 'h1') {
-      arr2.push(makeElement().header(value));
-    } else {
-      arr2.push(makeElement().paragraph(value));
-    }
-  }
-  arr2.forEach((item) => content.appendChild(item));
+  //   const arr2 = [];
+  //   for (const prop in pageInfo) {
+  //     const value = pageInfo[prop];
+  //     if (prop === 'h1') {
+  //       arr2.push(makeElement().header(value));
+  //     } else {
+  //       arr2.push(makeElement().paragraph(value));
+  //     }
+  //   }
+  //   arr2.forEach((item) => content.appendChild(item));
 }
 
 export default contact;
